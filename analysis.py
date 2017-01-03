@@ -82,8 +82,12 @@ def question3e():
     # If not possible, return 'NOT POSSIBLE'
 
 def question6():
+    '''
+    Experiment : python gridworld.py -a q -k 50 -n 0 -g BrieGrid -e 1
+    '''
     answerEpsilon = None
     answerLearningRate = None
+    return 'NOT POSSIBLE'
     return answerEpsilon, answerLearningRate
     # If not possible, return 'NOT POSSIBLE'
 
