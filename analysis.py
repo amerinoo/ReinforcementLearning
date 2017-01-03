@@ -53,7 +53,7 @@ def question3b():
 
 def question3c():
     '''
-    Prefer the distant exit (+1), risking the cliff (-10)
+    Prefer the distant exit (+10), risking the cliff (-10)
     '''
     answerDiscount = 0.7
     answerNoise = 0.1
@@ -62,9 +62,12 @@ def question3c():
     # If not possible, return 'NOT POSSIBLE'
 
 def question3d():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
+    '''
+    Prefer the distant exit (+10), avoiding the cliff (-10)
+    '''
+    answerDiscount = 0.8
+    answerNoise = 0.2
+    answerLivingReward = 0.0
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
