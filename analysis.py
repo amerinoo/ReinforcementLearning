@@ -23,7 +23,7 @@ def question2():
     answerDiscount = 0.9 # No s'ha canviat
 
     ''' No volem que prengui decicions dolentes, aquest parametre es un factor
-    per decidir si agafa o no una decicio dolenta.'''
+    per decidir si agafa o no una desicio dolenta.'''
     answerNoise = 0.0
     return answerDiscount, answerNoise
 
@@ -52,9 +52,12 @@ def question3b():
     # If not possible, return 'NOT POSSIBLE'
 
 def question3c():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
+    '''
+    Prefer the distant exit (+1), risking the cliff (-10)
+    '''
+    answerDiscount = 0.7
+    answerNoise = 0.1
+    answerLivingReward = 0.0
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
