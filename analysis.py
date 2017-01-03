@@ -28,9 +28,16 @@ def question2():
     return answerDiscount, answerNoise
 
 def question3a():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
+    '''
+    Prefer the close exit (+1), risking the cliff (-10)
+    '''
+    answerDiscount = 0.3
+    answerNoise = 0.0
+
+    # Si discount = 0.1 -> 0.0 <= livingReward <= 0.8
+    # Si discount = 0.2 -> 0.0 <= livingReward < 0.5
+    # Si discount = 0.3 -> 0.0 <= livingReward <= 0.0769
+    answerLivingReward = 0.0769
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
